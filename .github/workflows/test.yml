@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v4
+        with: 
+        node-version: 18
       - name: Install node_modules
-        run: npm install -g node-modules
+        run: npm ci
       - name: Bouil the project
-        run: npm build
+        run: npm test
       - run: echo "setup finished"
