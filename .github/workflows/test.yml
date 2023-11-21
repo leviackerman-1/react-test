@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - name: Install node_modules
-        run: npm
+        run: npm install -g node-modules
       - name: Bouil the project
         run: npm build
       - run: echo "setup finished"
