@@ -1,5 +1,5 @@
-name=First Github action
-on=[push]
+name:First Github action
+on:[push]
 jobs:
   hello:
     runs-on:ubuntu-latest
